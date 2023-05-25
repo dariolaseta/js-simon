@@ -1,4 +1,9 @@
-const nextDayTimer = new Date("May 25, 2023 09:30:00").getTime();
+const nextDayTimer = new Date("May 26, 2023 09:30:00").getTime();
 let currentTime = new Date().getTime();
 let remainingTime = nextDayTimer - currentTime;
 
+const timer = setInterval(function(){
+    
+    let days =  Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    document.getElementById("days").innerHTML = days;
+});
