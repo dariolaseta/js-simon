@@ -3,3 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #6495ed;
+    color: #008080;
+}
+
+h1{
+    margin-top: 2rem;
+}
+
+div.time-container{
+    margin: 5rem auto;
+    height: 400px;
+    width: 800px;
+    background-color: #e6e6fa;
+}
+
+div.numbers p{
+    margin: 2rem 2.5rem;
+    font-size: 5rem;
+}
+
+div.text p{
+    margin: .5rem 2rem;
+    font-size: 2rem;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
