@@ -16,4 +16,8 @@ const timer = setInterval(function(){
     let seconds = Math.floor(remainingTime % (1000 * 60) / 1000);
     document.getElementById("seconds").innerHTML = seconds;
 
+    if(remainingTime < 0){
+        clearInterval(timer);
+        console.log("over");
+    }
 }, 1000);
