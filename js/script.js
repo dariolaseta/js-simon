@@ -10,4 +10,7 @@ const timer = setInterval(function(){
     let hours = Math.floor(remainingTime % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
     document.getElementById("hours").innerHTML = hours;
 
+    let minutes = Math.floor(remainingTime % (1000 * 60 * 60) / (1000 * 60));
+    document.getElementById("minutes").innerHTML = minutes;
+
 }, 100);
