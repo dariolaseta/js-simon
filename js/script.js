@@ -1,8 +1,8 @@
 const nextDayTimer = new Date("May 26, 2023 09:30:00").getTime();
-let currentTime = new Date().getTime();
-let remainingTime = nextDayTimer - currentTime;
 
 const timer = setInterval(function(){
+    let currentTime = new Date().getTime();
+    let remainingTime = nextDayTimer - currentTime;
     
     let days =  Math.floor(remainingTime / (1000 * 60 * 60 * 24));
     document.getElementById("days").innerHTML = days;
@@ -13,4 +13,7 @@ const timer = setInterval(function(){
     let minutes = Math.floor(remainingTime % (1000 * 60 * 60) / (1000 * 60));
     document.getElementById("minutes").innerHTML = minutes;
 
-}, 100);
+    let seconds = Math.floor(remainingTime % (1000 * 60) / 1000);
+    document.getElementById("seconds").innerHTML = seconds;
+
+}, 1000);
